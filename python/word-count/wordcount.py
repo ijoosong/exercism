@@ -6,8 +6,8 @@ def word_count(sentence):
     for word in uniq_words:
         word_dict.update({word: 0})
     for word in words:
-        if word in word_dict:
-            word_dict[word]=word_dict[word] + 1
+#        if word in word_dict:
+        word_dict[word]=word_dict[word] + 1
 
     return word_dict
 

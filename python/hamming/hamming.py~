@@ -1,0 +1,8 @@
+def distance(orig, new):
+    count = 0
+    place = 0
+    for char in orig:
+        if not char == new[place]:
+            count+=1
+        place+=1
+    return count
