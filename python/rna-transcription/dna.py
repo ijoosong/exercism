@@ -1,6 +1,6 @@
 def to_rna(nucleotide):
     rna = {'G': 'C', 'C': 'G', 'T': 'A', 'A': 'U'}
-    rna_string = ""
+    rna_string = ""E
     buff = []
     if len(nucleotide) == 1:
         return rna[nucleotide]
