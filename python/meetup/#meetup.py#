@@ -1,4 +1,0 @@
-import datetime
-
-def meetup_day(year, month, day, quality):
-    
