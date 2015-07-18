@@ -10,7 +10,7 @@ class AllergiesTests(unittest.TestCase):
         self.assertFalse(allergies.is_allergic_to('peanuts'))
         self.assertFalse(allergies.is_allergic_to('cats'))
         self.assertFalse(allergies.is_allergic_to('strawberries'))
-
+ 
     def test_is_allergic_to_eggs(self):
         self.assertTrue(Allergies(1).is_allergic_to('eggs'))
 
