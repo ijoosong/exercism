@@ -9,13 +9,9 @@ class Allergies(object):
                  'pollen': 64,
                  'cats': 128
     }
-
+    al = ['eggs', 'peanuts', 'shellfish', 'strawberries', 'tomatoes', 'chocolate', 'pollen', 'cats']
     def __init__(self, number):
         self.number = number
-        self.list = []
-
-    def is_allergic_to(self, list):
-        for thing in list:
-            if self.number & allergens[thing] != 0:
-                self.list.append(thing)
-        return self.list
+        self.list = [item for item in self.al if self.number&self.allergens[item]!=0]
+    def is_allergic_to(self, item):
+        return self.number & self.allergens[item] != 0
