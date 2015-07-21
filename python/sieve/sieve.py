@@ -1,5 +1,6 @@
 def sieve(num):
-    nums = range(2,num)
-    for i in range(2,8):
+    nums = range(2,num+1)
+
+    for i in range(2,num+1):
         nums = filter(lambda x: x==i or x%i, nums)
     return nums
