@@ -9,5 +9,5 @@ def encode(str):
     return ' '.join([pre_encoded[i:i+5] for i in range(0, len(pre_encoded), 5)])
 
 def decode(str):
-    
-    return str
+    pre_decoded = ''.join(str.split(' ')).lower()
+    return ''.join([code[c] for c in pre_decoded if c in code])
