@@ -6,6 +6,6 @@ def sum_of_multiples(num, *args, **kwargs):
         factors = [x for x in args[0]]
     nums = range(num)
     for num in factors:
-        buff.append((filter(lambda x:x%num==0, nums))
+        buff.append((filter(lambda x:x%num==0, nums)))
 
-    return total
+    return sum(buff)
